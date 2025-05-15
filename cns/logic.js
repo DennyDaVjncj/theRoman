@@ -6,3 +6,7 @@ function rot13(str) {
 }
 
 rot13("SERR PBQR PNZC");
+
+/**
+ * write out logic for returning the string: "free code camp"
+ */
