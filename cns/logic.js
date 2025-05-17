@@ -8,10 +8,15 @@ var corpus = {
   'Y': 'L','Z': 'M'
 };
 
-
 function rot13(str) {
   let codeDataStructure = str.split("");
   let optimusPrime=[];
+
+  optimusPrime=codeDataStructure.map((actor)=>{
+    if(corpus.hasOwnProperty(actor)){
+      actor=corpus[actor];
+    }  
+  })
 
   return str;
 }
