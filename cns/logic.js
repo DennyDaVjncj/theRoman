@@ -1,3 +1,5 @@
+let DOM=document.getElementById("output");
+
 var corpus = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
   'E': 'R','F': 'S','G': 'T','H': 'U',
@@ -16,7 +18,7 @@ function rot13(str) {
     if(corpus.hasOwnProperty(actor)){
       actor=corpus[actor];
     }  
-    // console.log(actor);
+    console.log(actor);
     return actor
   })
   console.log(str)
