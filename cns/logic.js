@@ -27,4 +27,5 @@ rot13("SERR PBQR PNZC");
 
 /**
  * write out logic for returning the string: "free code camp"
+ * incorporate DOM manipulation, for ui/ux 
  */
