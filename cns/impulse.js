@@ -1,4 +1,4 @@
-let DOM=document.getElementById("output");
+let DOM=document.getElementById("");
 
 var corpus = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
