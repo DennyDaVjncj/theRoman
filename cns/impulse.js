@@ -1,4 +1,4 @@
-let DOM=document.getElementById("").addEventListener("click",function(){
+let DOM=document.getElementById("").addEventListener("click",function()){
   rot13();
 };
 
