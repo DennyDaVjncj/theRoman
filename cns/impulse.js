@@ -1,6 +1,6 @@
-let DOM=document.getElementById("").addEventListener("click",function()){
+let DOM=document.getElementById("rot13").addEventListener("click",()=>{
   rot13();
-};
+});
 
 var corpus = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
