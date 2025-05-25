@@ -1,13 +1,10 @@
-header,section {
-  text-align: center;
-}
-
 body {
   font-family: Arial, sans-serif;
 }
 
 main {
   padding: 40px;
+  text-align: center;
 }
 
 footer {
