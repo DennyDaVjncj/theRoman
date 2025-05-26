@@ -1,6 +1,8 @@
-// let DOM=document.getElementById("rot13").addEventListener("click",()=>{
-//   rot13();
-// });
+let DOM=document.getElementById("rot13").addEventListener("click",()=>{
+  rot13();
+});;
+
+
 
 var corpus = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
@@ -26,11 +28,8 @@ function rot13(str) {
   console.log(str)
   return str;
 }
-
 rot13("SERR PBQR PNZC");
 
 /**
- * write out logic for returning the string: "free code camp"
- * incorporate DOM manipulation, for ui/ux 
- * configure on click event on button, for user to decode current text being displayed 
+ * write logic for updating the inner text upon clicking the button
  */
