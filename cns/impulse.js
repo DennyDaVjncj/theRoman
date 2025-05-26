@@ -1,4 +1,4 @@
-let DOM=document.getElementById("rot13").addEventListener("click",()=>{
+let injctn13=document.getElementById("rot13").addEventListener("click",()=>{
   rot13();
 });;
 
@@ -33,3 +33,15 @@ rot13("SERR PBQR PNZC");
 /**
  * write logic for updating the inner text upon clicking the button
  */
+
+// Add event listener to button and update UI using innerText
+const btn = document.getElementById("rot13");
+if (btn) {
+  btn.addEventListener("click", function () {
+    // Find the first <p> in the content section
+    const p = document.querySelector("section.content p");
+    if (p) {
+      p.innerText = "This content was updated by clicking the button!";
+    }
+  });
+}
