@@ -17,12 +17,12 @@ footer {
   width: 100%;
 }
 
-.sidebar ul {
+.sidebar, ul {
   padding-left: 16px;
   margin-left: 0;
 }
 
-.sidebar ul li {
+.sidebar, ul, li {
   margin-left: 0;
   padding-left: 0;
 }
