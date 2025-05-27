@@ -1,10 +1,10 @@
-let injctn13=document.getElementById("rot13").addEventListener("click",()=>{
+let injctn13=document.getElementById("rot13")addEventListener("click",()=>{
   rot13();
 });;
 
 const btn = document.getElementById("rot13");
 if (btn) {
-  btn.addEventListener("click", function () {
+  btn.addEventListener("click",()=> {
     // Find the first <p> in the content section
     const p = document.querySelector("section.content p");
     if (p) {
