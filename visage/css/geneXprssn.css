@@ -17,9 +17,9 @@ footer {
   width: 100%;
 }
 
-.sidebar, ul {
-  padding-left: 100px;
-  margin-left: 0;
+ul {
+  padding-left: 50px;
+  margin-left: 10;
 }
 
 /* .sidebar, ul, li {

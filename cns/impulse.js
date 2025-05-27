@@ -2,6 +2,17 @@ let injctn13=document.getElementById("rot13").addEventListener("click",()=>{
   rot13();
 });;
 
+const btn = document.getElementById("rot13");
+if (btn) {
+  btn.addEventListener("click", function () {
+    // Find the first <p> in the content section
+    const p = document.querySelector("section.content p");
+    if (p) {
+      p.innerText = "This content was updated by clicking the button!";
+    }
+  });
+}
+
 
 
 var corpus = {
@@ -35,13 +46,4 @@ rot13("SERR PBQR PNZC");
  */
 
 // Add event listener to button and update UI using innerText
-const btn = document.getElementById("rot13");
-if (btn) {
-  btn.addEventListener("click", function () {
-    // Find the first <p> in the content section
-    const p = document.querySelector("section.content p");
-    if (p) {
-      p.innerText = "This content was updated by clicking the button!";
-    }
-  });
-}
+
