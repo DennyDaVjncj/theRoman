@@ -2,7 +2,7 @@ let injctn13=document.getElementById("rot13").addEventListener("click",()=>{
   rot13();
 });;
 
-const btn = document.getElementById("rot13");
+const btn = document.getElementById("rot12");
 if (btn) {
   btn.addEventListener("click",()=> {
     // Find the first <p> in the content section
