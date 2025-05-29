@@ -1,19 +1,17 @@
-let injctn13=document.getElementById("#rot13").addEventListener("click",()=>{
+let injctn13=document.getElementById("rot13").addEventListener("click",()=>{
   rot13();
 });;
 
-const btn = document.getElementById("#rot13");
+const btn = document.getElementById("rot13");
 if (btn) {
   btn.addEventListener("click",()=> {
     // Find the first <p> in the content section
-    const p = document.getElementById("#dvc");
+    const p = document.getElementById("dvc");
     if (p) {
       p.innerText = rot13(p.innerText);
     }
   });
 }
-
-
 
 var corpus = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
