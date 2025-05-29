@@ -1,14 +1,14 @@
-let injctn13=document.getElementById("rot13")addEventListener("click",()=>{
+let injctn13=document.getElementById("#rot13").addEventListener("click",()=>{
   rot13();
 });;
 
-const btn = document.getElementById("rot13");
+const btn = document.getElementById("#rot13");
 if (btn) {
   btn.addEventListener("click",()=> {
     // Find the first <p> in the content section
-    const p = document.querySelector("section.content p");
+    const p = document.getElementById("#dvc");
     if (p) {
-      p.innerText = "This content was updated by clicking the button!";
+      p.innerText = rot13(p.innerText);
     }
   });
 }
