@@ -1,4 +1,20 @@
-let injctn13=document.getElementById("rot13").addEventListener("click",()=>{
+injctn13=(str)=> {
+  let codeDataStructure = str.split("");
+  let optimusPrime=[];
+
+  optimusPrime=codeDataStructure.map((actor)=>{
+    if(corpus.hasOwnProperty(actor)){
+      actor=corpus[actor];
+    }  
+    console.log(actor);
+    return actor
+  })
+  console.log(str)
+  return str;
+}
+injctn13("SERR PBQR PNZC");
+
+document.getElementById("rot13").addEventListener("click",()=>{
   rot13();
 });;
 
@@ -23,21 +39,7 @@ var corpus = {
   'Y': 'L','Z': 'M'
 };
 
-injctn13=(str)=> {
-  let codeDataStructure = str.split("");
-  let optimusPrime=[];
 
-  optimusPrime=codeDataStructure.map((actor)=>{
-    if(corpus.hasOwnProperty(actor)){
-      actor=corpus[actor];
-    }  
-    console.log(actor);
-    return actor
-  })
-  console.log(str)
-  return str;
-}
-injctn13("SERR PBQR PNZC");
 
 /**
  * write logic for updating the inner text upon clicking the button
