@@ -23,7 +23,7 @@ var corpus = {
   'Y': 'L','Z': 'M'
 };
 
-function rot13(str) {
+injctn13=(str)=> {
   let codeDataStructure = str.split("");
   let optimusPrime=[];
 
@@ -37,7 +37,7 @@ function rot13(str) {
   console.log(str)
   return str;
 }
-rot13("SERR PBQR PNZC");
+injctn13("SERR PBQR PNZC");
 
 /**
  * write logic for updating the inner text upon clicking the button
