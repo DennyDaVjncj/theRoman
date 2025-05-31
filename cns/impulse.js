@@ -6,7 +6,7 @@ injctn13=(str)=> {
     if(corpus.hasOwnProperty(actor)){
       actor=corpus[actor];
     }  
-    console.log(actor);
+    // console.log(actor);
     return actor
   })
   console.log(str)
@@ -16,7 +16,7 @@ injctn13("SERR PBQR PNZC");
 
 document.getElementById("rot13").addEventListener("click",()=>{
   rot13();
-});;
+});
 
 const btn = document.getElementById("rot12");
 if (btn) {
@@ -28,6 +28,7 @@ if (btn) {
     }
   });
 }
+
 
 var corpus = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
@@ -43,7 +44,5 @@ var corpus = {
 
 /**
  * write logic for updating the inner text upon clicking the button
+ * gettt logic functtioning again
  */
-
-// Add event listener to button and update UI using innerText
-
