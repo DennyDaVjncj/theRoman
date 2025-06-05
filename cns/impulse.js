@@ -1,35 +1,3 @@
-injctn13=(str)=> {
-  let codeDataStructure = str.split("");
-  let optimusPrime=[];
-
-  optimusPrime=codeDataStructure.map((actor)=>{
-    if(corpus.hasOwnProperty(actor)){
-      actor=corpus[actor];
-    }  
-    // console.log(actor);
-    return actor
-  })
-  console.log(str)
-  return str;
-}
-injctn13("SERR PBQR PNZC");
-
-document.getElementById("rot13").addEventListener("click",()=>{
-  rot13();
-});
-
-const btn = document.getElementById("rot12");
-if (btn) {
-  btn.addEventListener("click",()=> {
-    // Find the first <p> in the content section
-    const p = document.getElementById("dvc");
-    if (p) {
-      p.innerText = rot13(p.innerText);
-    }
-  });
-}
-
-
 var corpus = {
   'A': 'N','B': 'O','C': 'P','D': 'Q',
   'E': 'R','F': 'S','G': 'T','H': 'U',
@@ -39,6 +7,40 @@ var corpus = {
   'U': 'H','V': 'I','W': 'J','X': 'K',
   'Y': 'L','Z': 'M'
 };
+
+const injctn13=str=> {
+  let codeDataStructure = str.split("");
+  let optimusPrime=[];
+  
+  document.getElementById("rot13").addEventListener("click",()=>{
+    innerText = injctn13(p.innerText)
+    injctn13();
+  });
+  
+  optimusPrime=codeDataStructure.map((actor)=>{
+    if(corpus.hasOwnProperty(actor)){
+      actor=corpus[actor];
+    }  
+    console.log(actor);
+    return actor
+  })
+  console.log(str)
+  return str;
+}
+injctn13("le da Vjncj code");
+
+const btn = document.getElementById("rot12");
+if (btn) {
+  btn.addEventListener("click",()=> {
+    // Find the first <p> in the content section
+    const p = document.getElementById("dvc");
+    if (p) {
+      innerText = injctn13(p.innerText)//code relocated to hoisted fjunction;
+    }
+  });
+}
+
+
 
 
 
