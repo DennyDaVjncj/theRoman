@@ -10,12 +10,21 @@ var corpus = {
 
 
 const injctn13=str=> {
-  let codeDataStructure = str.split("");
+  let codeDataStructure = str.split(" ");
   let optimusPrime=[];
+  const btn = Document.getElementById("rot12");
+
+  if (btn) {
+  btn.addEventListener("click",()=> {
+    const p = Document.getElementById("rot13");
+    if (p) {
+      p.innerText = injctn13(p.innerText)
+    }
+  });
+}
   
   // document.getElementById("rot13").addEventListener("click",()=>{
   //   innerText = injctn13(p.innerText)
-  //   injctn13();
   // });
   
   optimusPrime=codeDataStructure.map(actor=>{
@@ -29,23 +38,6 @@ const injctn13=str=> {
   return str;
 }
 injctn13("le da Vjncj code");
-
-const btn = document.getElementById("rot12");
-if (btn) {
-  btn.addEventListener("click",()=> {
-    const p = document.getElementById("rot13");
-    if (p) {
-      p.innerText = injctn13(p.innerText)
-    }
-  });
-}
-
-
-
-
-
-
-
 
 /**
  * write logic for updating the inner text upon clicking the button
