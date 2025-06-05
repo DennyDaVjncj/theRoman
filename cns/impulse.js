@@ -17,7 +17,7 @@ const injctn13=str=> {
   //   injctn13();
   // });
   
-  optimusPrime=codeDataStructure.map((actor)=>{
+  optimusPrime=codeDataStructure.map(actor=>{
     if(corpus.hasOwnProperty(actor)){
       actor=corpus[actor];
     }  
