@@ -12,10 +12,10 @@ const injctn13=str=> {
   let codeDataStructure = str.split("");
   let optimusPrime=[];
   
-  document.getElementById("rot13").addEventListener("click",()=>{
-    innerText = injctn13(p.innerText)
-    injctn13();
-  });
+  // document.getElementById("rot13").addEventListener("click",()=>{
+  //   innerText = injctn13(p.innerText)
+  //   injctn13();
+  // });
   
   optimusPrime=codeDataStructure.map((actor)=>{
     if(corpus.hasOwnProperty(actor)){
