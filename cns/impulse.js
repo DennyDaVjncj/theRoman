@@ -8,6 +8,7 @@ var corpus = {
   'Y': 'L','Z': 'M'
 };
 
+
 const injctn13=str=> {
   let codeDataStructure = str.split("");
   let optimusPrime=[];
@@ -32,13 +33,15 @@ injctn13("le da Vjncj code");
 const btn = document.getElementById("rot12");
 if (btn) {
   btn.addEventListener("click",()=> {
-    // Find the first <p> in the content section
-    const p = document.getElementById("dvc");
+    const p = document.getElementById("rot13");
     if (p) {
-      innerText = injctn13(p.innerText)//code relocated to hoisted fjunction;
+      p.innerText = injctn13(p.innerText)
     }
   });
 }
+
+
+
 
 
 
