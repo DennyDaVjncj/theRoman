@@ -8,24 +8,19 @@ var corpus = {
   'Y': 'L','Z': 'M'
 };
 
+// const btn = Document.getElementById("rot12");
+// if (btn) {
+// btn.addEventListener("click",()=> {
+//   const p = Document.getElementById("rot13");
+//   if (p) {
+//     p.innerText = injctn13(p.innerText)//I want this to result in the text being updated to a shifted value, according to the amount selected by the user.
+//   }
+// });
+// }
 
 const injctn13=str=> {
   let codeDataStructure = str.split(" ");
   let optimusPrime=[];
-  const btn = Document.getElementById("rot12");
-
-  if (btn) {
-  btn.addEventListener("click",()=> {
-    const p = Document.getElementById("rot13");
-    if (p) {
-      p.innerText = injctn13(p.innerText)
-    }
-  });
-}
-  
-  // document.getElementById("rot13").addEventListener("click",()=>{
-  //   innerText = injctn13(p.innerText)
-  // });
   
   optimusPrime=codeDataStructure.map(actor=>{
     if(corpus.hasOwnProperty(actor)){
