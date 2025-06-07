@@ -32,9 +32,8 @@ const injctn13=str=> {
   console.log(str)
   return str;
 }
-injctn13("le da Vjncj code");
+injctn13("le da Vjncj code");//my hunch is that this value should be linked to the values selected by user, from dropdown, and then the text on screen, should be shifted according to that value.
 
 /**
- * write logic for updating the inner text upon clicking the button
- * gettt logic functtioning again
+ * collect values from dropdown, and then shift the text on screen, according to that value. According to priciples from the cesar cipher, the text should be shifted by the value selected by user.
  */
