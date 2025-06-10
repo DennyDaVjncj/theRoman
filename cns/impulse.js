@@ -8,16 +8,17 @@ var corpus = {
   'Y': 'L','Z': 'M'
 };
 
-// const btn = document.getElementById("rot12").addEventListener("click",()=>{
-//   const drpDwn=document.getElementById("picker");
-//   const rShift=parseInt(drpDwn.value,10);
-//   const uiCntnt=document.getElementById("rot13");
+const btn = document.getElementById("rot12").addEventListener("click",()=>{
+  // const drpDwn=document.getElementById("picker");
+  // const rShift=parseInt(drpDwn.value,10);
+  // const uiCntnt=document.getElementById("rot13");
 
-//   if(uiCntnt)uiCntnt.innerText=injctn13(rShift);
-// });
+  // if(uiCntnt)uiCntnt.innerText=injctn13(rShift);
+  injctn13("dVc");
+});
 
 const injctn13=str=> {
-  let codeDataStructure = str.split(",");
+  let codeDataStructure = str.split("");
   let optimusPrime=[];
   
   optimusPrime=codeDataStructure.map(actor=>{
@@ -30,7 +31,7 @@ const injctn13=str=> {
   console.log(str)
   return str;
 }
-injctn13("da Vjncj Code");//my hunch is that this value should be linked to the values selected by user, from dropdown, and then the text on screen, should be shifted according to that value.
+// injctn13("da Vjncj Code");//my hunch is that this value should be linked to the values selected by user, from dropdown, and then the text on screen, should be shifted according to that value.
 
 /**
  * collect values from dropdown, and then shift the text on screen, according to that value. According to priciples from the cesar cipher, the text should be shifted by the value selected by user.
